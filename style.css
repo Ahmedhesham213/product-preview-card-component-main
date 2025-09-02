@@ -83,6 +83,22 @@ img {
   cursor: pointer;
 }
 .product .product-content .cart:hover {
-    background-color: hsl(158, 42%, 18%);
-    transition:  0.7s;
+  background-color: hsl(158, 42%, 18%);
+  transition: 0.7s;
+}
+
+@media (max-width: 700px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+
+  .product img {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .product .product-content {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
 }
